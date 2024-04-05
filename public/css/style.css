@@ -1,0 +1,201 @@
+body {
+    height: 100%;
+    background-color: snow;
+  }
+  .no-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 100%;
+  }
+  
+  .no-button:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .project {
+    cursor: pointer;
+    box-shadow: inset 0 -3em 3em rgb(0 0 0 / 0%), 0 0 0 2px rgb(255, 255, 255),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    margin: 5px;
+    background-color: white;
+    border-radius: 7px;
+  }
+  
+  .project-header {
+    padding-top: 20px;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+  ul {
+    background-color: DeepPink;
+  }
+  
+  .btn-primary {
+    cursor: pointer;
+  }
+  
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    color: deeppink;
+    margin-top: auto;
+    position: absolute;
+  }
+  
+  header a {
+    color: white !important;
+  }
+  
+  .welcome {
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    width: 200px;
+    height: 100%;
+    position: inherit;
+    overflow: auto;
+    font-size: larger;
+    font-weight: bold;
+  }
+  
+  nav a {
+    color: white !important;
+  }
+  
+  h3 {
+    margin-bottom: 20px;
+  }
+  
+  li {
+    padding: 20px;
+  }
+  
+  .content {
+    height: 100%;
+  }
+  
+  .project .row {
+    margin-bottom: 10px;
+  }
+  
+  .btn.btn-primary {
+    background-color: deeppink;
+    color: white;
+  }
+  
+  .btn.btn-primary a {
+    color: white;
+  }
+  
+  .btn-circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .btn-circle i {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn.btn-light {
+    background-color: black;
+  }
+  
+  #project-actions {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .welcome {
+    text-align: center;
+    color: #7c555569;
+    font-family: monospace;
+    text-align: center;
+  }
+  
+  #main-nav {
+    padding: 0px;
+  }
+  
+  .priority-1 {
+    border-left: solid 4px;
+    border-color: red;
+  }
+  .priority-2 {
+    border-left: solid 4px;
+    border-color: rgb(255, 221, 0);
+  }
+  .priority-3 {
+    border-left: solid 4px;
+    border-color: rgb(41, 195, 41);
+  }
+  
+  .home-element {
+    cursor: pointer;
+    box-shadow: inset 0 -3em 3em rgb(0 0 0 / 0%), 0 0 0 2px rgb(255, 255, 255),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    margin: 5px;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 7px;
+  }
+  
+  .tasks-list {
+    padding-top: 30px;
+  }
+  
+  .padding-task {
+    padding: 5px;
+  }
+  
+  .overflow-scroll {
+    overflow: scroll;
+    margin-bottom: 20px;
+  }
+  .tasks-list .overflow-scroll {
+    max-height: 200px;
+  }
+  
+  .padding-task .row {
+    min-height: 30px;
+    border-bottom: 1px solid #80808054;
+  }
+  
+  .tasks-completed {
+    font-size: 70px;
+    font-family: fantasy;
+    text-align: center;
+  }
+  
+  .tasks-completed {
+    text-align: center;
+  }
+  
+  .project-header-title {
+    color: #4066d3;
+    font-size: xx-large;
+  }
+  
+  #my-default-button {
+    background-color: #e069c4;
+  }
+  
+  .container-nomargin {
+    margin-left: 10px !important;
+    margin-right: 50px !important;
+  }

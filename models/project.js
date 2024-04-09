@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require();
+const sequelize = require("../config/connection");
 
 class Project extends Model {}
 
@@ -15,9 +15,7 @@ Project.init({
         allowNull: false,
     },
     description: {
-        type: DataTypes.Date,
-        allowNull: false,
-        defaultValue: DataTypes.NOW,
+        type: DataTypes.STRING,
     },
     due_date: {
         type: DataTypes.DATE,

@@ -14,20 +14,20 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      // If successful, redirect to the main page
+      // If successful, redirect the browser to the main page
       Swal.fire({
-        text: "Ready To Tackle Your Tasks",
+        text: "Mr Get It Done is ready for ya...",
         icon: "success",
-        background: "snow",
+        background: "white",
         confirmButtonText: "Go",
       }).then((result) => {
         document.location.replace("/homepage");
       });
     } else {
       Swal.fire({
-        text: "Login Failed",
+        text: "Login failed",
         icon: "error",
-        background: "snow",
+        background: "white",
         confirmButtonText: "Ok",
       });
     }

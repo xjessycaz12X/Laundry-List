@@ -1,24 +1,22 @@
-const sequelize = require('sequelize');
-const { User, Project, Task } = require('../models');
+const sequelize = require("../config/connection");
+const { User, Task, Project } = require("../models");
 
-const seedUserData = require('./userData');
-const seedTaskData = require('./taskData');
-const seedProjectData = require('./projectData');
+const seedUserData = require("./userData");
+const seedTaskData = require("./taskData");
+const seedProjectData = require("./projectData");
 
 const seedAll = async () => {
-    try {
-      await sequelize.sync({ force: true });
-      await seedUserData();
-      await seedTaskData();
-      await seedProjectData();
-      console.log('Database seeded successfully.');
-    } catch (error) {
-      console.error('Error seeding database:', error);
-    } finally {
-      sequelize.close(); // Close the database connection
-      process.exit(0); // Exit the process
-    }
-  };
-  
-  seedAll();
+  await sequelize.sync({ force: true });
+  console.log("\n----- DATABASE SYNCED -----\n");
+  await seedUserData();
+  console.log("\n----- USER DATA SEEDED -----\n");
 
+  await seedProjectData();
+  console.log("\n----- PROJECTS SEEDED -----\n");
+
+  await seedTaskData();
+  console.log("\n----- TASKS SEEDED -----\n");
+  process.exit(0);
+};
+
+seedAll();

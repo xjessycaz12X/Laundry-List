@@ -1,0 +1,82 @@
+<div class="row">
+  <div class="col-md-2" style="text-align: left;">
+    <button class="btn btn-light" type="submit">
+      <a href="/mrdone">Go back</a>
+    </button>
+  </div>
+  <div class="col-md-10" style="text-align: right;">
+    <h4 class="project-header-title">
+      Create new task
+    </h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <form class="form newtask-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          class="form-input"
+          type="text"
+          id="name"
+          placeholder="My task"
+          onchange="dataChanged()"
+        />
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input
+          class="form-input"
+          type="text"
+          id="description"
+          placeholder="My task description"
+          onchange="dataChanged()"
+        />
+      </div>
+      <div class="form-group">
+        <label for="due-date">Due date</label>
+        <input
+          class="form-input"
+          type="date"
+          id="date"
+          placeholder="2024-04-08"
+          onchange="dataChanged()"
+        />
+      </div>
+      <div class="form-group">
+        <label for="projects-options">Project</label>
+        <select id="project" name="projects" class="form-input">
+          {{#each projects as |project|}}
+            <option value={{project.id}}>{{project.name}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="projects-options">Priority</label>
+        <select id="priority" name="priority" class="form-input">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit">create</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12" style="text-align:center">
+    <button class="btn btn-primary" id="my-default-button">Schedule it!</button>
+  </div>
+</div>
+<script
+  src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2"
+  async
+  defer
+></script>
+<script src="/js/newtask.js"></script>

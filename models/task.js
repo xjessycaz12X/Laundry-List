@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
-const sequelize = require();
+const sequelize = require("../config/connection");
 
 class Task extends Model {}
 
@@ -25,6 +25,10 @@ Task.init({
         allowNull: false,
         defaultValue: DataTypes.NOW,
     },
+    status: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
     priority: {
         type: DataTypes.INTEGER,
         allowNull: false,

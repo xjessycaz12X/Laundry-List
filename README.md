@@ -22,12 +22,6 @@
 
 All set to run the app. 
 
-## Usage
-
-
-
-## Contribution
-
 
 ## Test
 There are no test for the application.
@@ -41,6 +35,10 @@ For more information, visit [License Details](https://opensource.org/license/MIT
 
 Contact us at: 
 [jjimenez174](https://github.com/jjimenez174)
+
+[xjessycaz12X](https://github.com/xjessycaz12X)
+
+[vlenguyen](https://github.com/vlenguyen)
 
 ## Link Deploy Application
 

@@ -1,6 +1,6 @@
-const User = require("./User");
-const Project = require("./Project");
-const Task = require("./Task");
+const User = require("./user");
+const Project = require("./project");
+const Task = require("./task");
 
 //A user can have multiple projects
 User.hasMany(Project, {

@@ -1,5 +1,5 @@
 const User = require("./User");
-const Project = require("./Project");
+const Project = require("./Projects");
 const Task = require("./Task");
 
 //A user can have multiple projects

@@ -929,7 +929,7 @@
   }
   
   .bg-light {
-    background-color: #d9e9e8 !important;
+    background-color: white !important;
   }
   
   .bg-dark {
@@ -979,7 +979,7 @@
     border-radius: 0.3rem;
     border: 1px solid transparent;
     outline: none;
-    color: #1a1a1a;
+    color: black;
     background-color: #aeaeae;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   }

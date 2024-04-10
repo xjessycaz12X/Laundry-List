@@ -113,7 +113,8 @@ body {
   }
   
   .btn.btn-light {
-    background-color: black;
+    background-color: snow;
+    
   }
   
   #project-actions {
@@ -123,7 +124,7 @@ body {
   
   .welcome {
     text-align: center;
-    color: #7c555569;
+    color: violet;
     font-family: monospace;
     text-align: center;
   }
@@ -178,7 +179,7 @@ body {
   
   .tasks-completed {
     font-size: 70px;
-    font-family: fantasy;
+    font-family: Palatino, URW Palladio L, serif;
     text-align: center;
   }
   
@@ -187,7 +188,7 @@ body {
   }
   
   .project-header-title {
-    color: #4066d3;
+    color: hotpink;
     font-size: xx-large;
   }
   

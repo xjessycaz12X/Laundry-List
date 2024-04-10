@@ -8,7 +8,7 @@ User.hasMany(Project, {
   onDelete: "CASCADE",
 });
 
-//A user can have multiple tasks
+//A user can have multiple tasks.
 User.hasMany(Task, {
   foreignKey: "user_id",
   onDelete: "CASCADE",
